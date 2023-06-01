@@ -26,6 +26,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: cd my-remix-app && npm ci
-    - run: cd my-remix-app && npm run build --if-present
-    - run: cd my-remix-app && npm test
+    - name: Set up working directory
+      run: cd my-remix-app
+    - name: Install dependencies
+      run: npm ci
+    - name: Build project
+      run: npm run build --if-present
+    - name: Run tests
+      run: npm test
