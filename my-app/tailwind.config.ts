@@ -1,28 +1,26 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 module.exports = {
-  content: [
-    './app/**/*.{js,jsx,ts,tsx}'
-  ],
+  content: ['./app/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class',
   theme: {
     fontFamily: {
       sans: ['Manrope', ...defaultTheme.fontFamily.sans],
-      roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
+      roboto: ['Roboto', ...defaultTheme.fontFamily.sans]
     },
     extend: {
       transformOrigin: {
-        0: '0%',
+        0: '0%'
       },
       zIndex: {
-        '-1': '-1',
+        '-1': '-1'
       },
       flex: {
         2: '2',
         3: '3',
         4: '4',
         5: '5',
-        6: '6',
+        6: '6'
       },
       colors: {
         background: '#fff',
@@ -40,10 +38,10 @@ module.exports = {
         'card-link-bg': 'rgba(0, 136, 241, 0.08)',
         'card-link': '#0088F1',
         'gray-200': '#F8F8F8',
-        disabled: '#F0F0F0',
+        disabled: '#F0F0F0'
       }
     },
-    variants: { borderColor: ['responsive', 'hover', 'focus', 'focus-within'] },
+    variants: { borderColor: ['responsive', 'hover', 'focus', 'focus-within'] }
   },
   plugins: [require('daisyui')],
   daisyui: {
@@ -60,15 +58,15 @@ module.exports = {
           info: '#3ABFF8',
           success: '#36D399',
           warning: '#FBBD23',
-          error: '#e74c3c',
-        },
-      },
+          error: '#e74c3c'
+        }
+      }
     ],
     base: true,
     utils: true,
     logs: true,
     rtl: false,
     prefix: '',
-    darkTheme: 'dark',
-  },
-};
+    darkTheme: 'dark'
+  }
+}

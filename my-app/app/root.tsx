@@ -1,17 +1,17 @@
-import stylesheet from "~/tailwind.css";
-import type { LinksFunction } from "@remix-run/node";
+import stylesheet from '~/tailwind.css'
+import type { LinksFunction } from '@remix-run/node'
 import {
   Links,
   LiveReload,
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+  ScrollRestoration
+} from '@remix-run/react'
 
 export const links: LinksFunction = () => [
-  ...(stylesheet ? [{ rel: "stylesheet", href: stylesheet }] : []),
-];
+  ...(stylesheet ? [{ rel: 'stylesheet', href: stylesheet }] : [])
+]
 
 export default function App() {
   return (
@@ -29,5 +29,5 @@ export default function App() {
         <LiveReload />
       </body>
     </html>
-  );
+  )
 }

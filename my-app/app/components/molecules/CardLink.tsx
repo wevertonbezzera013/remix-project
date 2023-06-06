@@ -1,4 +1,4 @@
-import React from 'react'; // Import React
+import React from 'react' // Import React
 
 import { Link } from '@remix-run/react'
 import clsx from 'clsx'
@@ -23,7 +23,6 @@ export const CardLink = ({
   variant = 'app',
   children
 }: CardLinkProps) => {
-
   return (
     <Link
       to={to}
@@ -37,9 +36,7 @@ export const CardLink = ({
         />
       </span>
       <span className="text-neutral text-semibold mt-3">{children}</span>
-      <span className={clsx('font-bold mt-2', textStyle[variant])}>
-        Test
-      </span>
+      <span className={clsx('font-bold mt-2', textStyle[variant])}>Test</span>
     </Link>
   )
 }

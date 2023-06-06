@@ -1,11 +1,11 @@
-import React from 'react';
-import { Administration } from '~/components/pages/Admin';
+import React from 'react'
+import { Administration } from '~/components/pages/Admin'
 
 export default function Index() {
   return (
-    <div className=''>
+    <div className="">
       <h1>TEST</h1>
-      <Administration/>
+      <Administration />
     </div>
-  );
+  )
 }
