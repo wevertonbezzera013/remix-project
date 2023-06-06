@@ -1,5 +1,5 @@
 export const Route = {
-    appUsers: '/users',
-    logs: '/logs',
-    // Routes
-  }
+  appUsers: '/users',
+  logs: '/logs'
+  // Routes
+}

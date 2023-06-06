@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import * as FaIcons from 'react-icons/fa'
 import type { IconBaseProps } from 'react-icons/lib'
 import * as MdIcons from 'react-icons/md'

@@ -1,4 +1,4 @@
-import React from 'react'; // Import React
+import React from 'react' // Import React
 
 import clsx from 'clsx'
 
